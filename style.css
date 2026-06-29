@@ -1,0 +1,314 @@
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f0ece4;
+  color: #2c2c2c;
+  padding: 30px 10px;
+}
+
+/* ===== PAGE WRAPPER ===== */
+article#resume {
+  max-width: 720px;
+  margin: 0 auto;
+  background-color: #fff8f0;
+  border: 2px solid #b5895a;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* ===== HEADER ===== */
+header#top-header {
+  background-color: #3b2a1a;
+  color: #f5e6d0;
+  padding: 28px 32px 20px;
+  text-align: center;
+}
+
+header#top-header figure#profile-fig {
+  margin-bottom: 14px;
+}
+
+header#top-header figure#profile-fig img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid #d4a96a;
+}
+
+header#top-header figcaption {
+  font-size: 11px;
+  color: #c8a882;
+  font-style: italic;
+  margin-top: 6px;
+}
+
+header#top-header h1 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #f5e6d0;
+  font-family: 'Georgia', serif;
+  margin-bottom: 4px;
+}
+
+header#top-header h2 {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #d4a96a;
+  font-weight: normal;
+  margin-bottom: 16px;
+}
+
+/* ===== NAV ===== */
+nav#jump-nav {
+  background-color: #5c3d1e;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav#jump-nav table {
+  margin: 0 auto;
+}
+
+nav#jump-nav td {
+  padding: 0 6px;
+  font-size: 12px;
+  color: #f5e6d0;
+  letter-spacing: 1px;
+}
+
+nav#jump-nav td a {
+  color: #d4a96a;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+nav#jump-nav td a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ===== CONTACT BAR ===== */
+address#contact-bar {
+  background-color: #f5ebe0;
+  border-bottom: 1px solid #d4a96a;
+  padding: 8px 20px;
+  text-align: center;
+  font-style: normal;
+  font-size: 12px;
+  color: #5c3d1e;
+  font-family: 'Georgia', serif;
+}
+
+address#contact-bar a {
+  color: #7a4f28;
+  text-decoration: none;
+}
+
+address#contact-bar a:hover {
+  text-decoration: underline;
+}
+
+/* ===== SECTION HEADINGS ===== */
+section.rs {
+  padding: 18px 28px 14px;
+  border-bottom: 1px solid #e2d0bc;
+}
+
+section.rs:last-child {
+  border-bottom: none;
+}
+
+section.rs h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #fff8f0;
+  background-color: #7a4f28;
+  padding: 5px 14px;
+  display: inline-block;
+  margin-bottom: 14px;
+  border-radius: 2px;
+}
+
+/* ===== EXPERIENCE CARDS ===== */
+article.exp-card {
+  margin-bottom: 12px;
+}
+
+article.exp-card:last-child {
+  margin-bottom: 0;
+}
+
+article.exp-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+article.exp-card header h3 {
+  font-size: 14px;
+  color: #3b2a1a;
+  font-family: 'Georgia', serif;
+}
+
+article.exp-card header p.year {
+  font-size: 11px;
+  color: #7a4f28;
+  font-style: italic;
+}
+
+article.exp-card p.org {
+  font-size: 12px;
+  color: #8a7060;
+  margin-bottom: 5px;
+}
+
+ul.bullet-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.bullet-list li {
+  font-size: 12.5px;
+  color: #3b2a1a;
+  padding: 2px 0 2px 16px;
+  position: relative;
+  line-height: 1.6;
+}
+
+ul.bullet-list li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: #b5895a;
+}
+
+/* ===== EDUCATION TABLE ===== */
+table#edu-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  font-family: 'Georgia', serif;
+}
+
+table#edu-table th {
+  background-color: #e8d5be;
+  color: #3b2a1a;
+  padding: 7px 10px;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+table#edu-table td {
+  padding: 7px 10px;
+  color: #3b2a1a;
+  border-bottom: 1px solid #e2d0bc;
+}
+
+table#edu-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===== SKILLS details ===== */
+details {
+  margin-bottom: 8px;
+  border-left: 3px solid #d4a96a;
+  padding-left: 10px;
+}
+
+details[open] {
+  border-left-color: #7a4f28;
+}
+
+summary {
+  font-size: 13px;
+  font-weight: bold;
+  color: #5c3d1e;
+  cursor: pointer;
+  list-style: none;
+  font-family: 'Georgia', serif;
+}
+
+summary::after {
+  content: ' ▼';
+  font-size: 10px;
+  color: #b5895a;
+}
+
+details[open] summary::after {
+  content: ' ▲';
+}
+
+details ul {
+  list-style: none;
+  padding: 5px 0 4px 10px;
+}
+
+details ul li {
+  font-size: 12px;
+  color: #3b2a1a;
+  padding: 2px 0;
+}
+
+details ul li::before {
+  content: '◆ ';
+  color: #d4a96a;
+  font-size: 8px;
+}
+
+/* ===== LANGUAGES & HOBBIES ===== */
+table#lang-table {
+  border-collapse: collapse;
+  font-size: 12.5px;
+  margin-bottom: 16px;
+  font-family: 'Georgia', serif;
+}
+
+table#lang-table td {
+  padding: 4px 14px 4px 0;
+  color: #3b2a1a;
+}
+
+table#lang-table td:last-child {
+  color: #7a4f28;
+  font-style: italic;
+}
+
+ol.hobby-list {
+  padding-left: 18px;
+  font-size: 12.5px;
+  color: #3b2a1a;
+  line-height: 1.8;
+}
+
+/* ===== FOOTER ===== */
+footer#resume-footer {
+  background-color: #3b2a1a;
+  color: #c8a882;
+  text-align: center;
+  padding: 12px;
+  font-size: 11.5px;
+  font-family: 'Georgia', serif;
+}
+
+footer#resume-footer a {
+  color: #d4a96a;
+  text-decoration: none;
+}
+
+footer#resume-footer a:hover {
+  text-decoration: underline;
+}
