@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Raleway:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,30 +7,30 @@
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'giest', 'Segoe UI', Arial, sans-serif;
   background: #1a1a1a;
   color: #333;
 }
 
 .resume {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 280px 1fr;
   max-width: 1080px;
   margin: 0 auto;
   min-height: 100vh;
 }
 
-/* ---------- SIDEBAR ---------- */
+/* ── SIDEBAR ── */
 .sidebar {
   background: #161616;
   color: #ddd;
-  padding: 40px 30px;
+  padding: 40px 28px;
 }
 
 .profile-pic {
-  width: 160px;
-  height: 160px;
-  margin: 0 auto 30px;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 34px;
   border: 2px solid #b9974c;
   border-radius: 50%;
   overflow: hidden;
@@ -38,39 +40,44 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
 }
 
 .sidebar-section {
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .sidebar-title {
   font-size: 16px;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #fff;
   border-bottom: 1px solid #b9974c;
-  padding-bottom: 8px;
-  margin-bottom: 12px;
+  padding-bottom: 7px;
+  margin-bottom: 16px;
+  font-weight: 700;
 }
 
 .contact-list .label {
-  font-size: 11px;
-  letter-spacing: 1px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
   color: #b9974c;
   text-transform: uppercase;
   margin-top: 10px;
+  display: block;
 }
 
 .contact-list dd {
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 4px;
+  color: #ccc;
 }
 
 .skill-group {
-  font-size: 14px;
+  font-size: 13px;
   color: #fff;
-  margin: 14px 0 6px;
+  margin: 12px 0 6px;
+  font-weight: 600;
 }
 
 .skill-list {
@@ -78,11 +85,12 @@ body {
 }
 
 .skill-list li {
-  font-size: 13px;
+  font-size: 12.5px;
   padding-left: 16px;
   position: relative;
-  margin-bottom: 6px;
-  line-height: 1.4;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  color: #bbb;
 }
 
 .skill-list li::before {
@@ -90,31 +98,36 @@ body {
   color: #b9974c;
   position: absolute;
   left: 0;
-  font-size: 10px;
+  font-size: 9px;
+  top: 4px;
 }
 
 .lang-item {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 13px;
   margin-bottom: 6px;
+  color: #ccc;
 }
 
-/* ---------- CONTENT ---------- */
+/* ── MAIN CONTENT ── */
 .content {
-  background: #a9a9a9;
-  padding: 50px 45px;
+  background: #ffffff;
+  padding: 45px 42px;
 }
 
+/* name block - no photo here */
 .content-header {
   margin-bottom: 30px;
 }
 
 .name {
-  font-size: 42px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 44px;
   font-weight: 800;
   letter-spacing: 1px;
   color: #1a1a1a;
+  line-height: 1.1;
 }
 
 .name .accent {
@@ -122,37 +135,52 @@ body {
 }
 
 .role {
-  font-size: 15px;
+  font-size: 12px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #222;
+  color: #333;
   margin-top: 8px;
   padding-bottom: 10px;
   border-bottom: 3px solid #1a1a1a;
   display: inline-block;
+  font-weight: 600;
 }
 
+/* section with golden line after heading */
 .content-section {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .section-title {
+  font-family: 'Playfair Display', Georgia, serif;
   font-size: 22px;
-  letter-spacing: 1px;
+  font-weight: 700;
+   text-transform: uppercase;
   color: #1a1a1a;
-  border-bottom: 1px solid #b9974c;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
   padding-bottom: 8px;
-  margin-bottom: 16px;
+}
+
+/* golden line after section heading */
+.section-title::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #b9974c;
 }
 
 .profile-text {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #1f1f1f;
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: #2a2a2a;
 }
 
+/* job cards */
 .job {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .job-header {
@@ -162,20 +190,22 @@ body {
 }
 
 .job-title {
-  font-size: 16px;
+  font-size: 15px;
   color: #111;
+  font-weight: 700;
 }
 
 .job-date {
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 700;
-  color: #5a4a1f;
+  color: #b9974c;
+  font-style: italic;
 }
 
 .job-company {
-  font-size: 13px;
-  color: #3a3a3a;
-  margin-bottom: 8px;
+  font-size: 12.5px;
+  color: #555;
+  margin-bottom: 7px;
   font-style: italic;
 }
 
@@ -184,62 +214,68 @@ body {
 }
 
 .job-points li {
-  font-size: 13.5px;
+  font-size: 13px;
   line-height: 1.6;
   padding-left: 16px;
   position: relative;
-  margin-bottom: 6px;
-  color: #1f1f1f;
+  margin-bottom: 5px;
+  color: #2a2a2a;
 }
 
 .job-points li::before {
   content: "–";
   position: absolute;
   left: 0;
-  color: #5a4a1f;
+  color: #777;
 }
 
+/* education */
 .edu-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 18px;
 }
 
 .edu-title,
 .award-title {
-  font-size: 15px;
+  font-size: 14px;
   color: #111;
+  font-weight: 700;
 }
 
 .edu-school,
 .award-org {
-  font-size: 13px;
-  color: #333;
-}
-
-.edu-date {
-  font-size: 13px;
-  font-weight: 700;
-  color: #5a4a1f;
+  font-size: 12.5px;
+  color: #555;
   margin-top: 2px;
 }
 
-.award-item {
-  margin-bottom: 14px;
+.edu-date {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #b9974c;
+  margin-top: 3px;
+  font-style: italic;
 }
 
+.award-item {
+  margin-bottom: 12px;
+}
+
+/* declaration footer */
 .declaration {
-  border-top: 1px solid #666;
+  border-top: 1px solid #ccc;
   padding-top: 14px;
   font-size: 12px;
-  color: #333;
+  color: #555;
+  line-height: 1.8;
 }
 
+/* responsive */
 @media (max-width: 768px) {
   .resume {
     grid-template-columns: 1fr;
   }
-
   .edu-grid {
     grid-template-columns: 1fr;
   }
