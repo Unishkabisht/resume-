@@ -12,9 +12,10 @@ resume/
 │   └── style.css
 │
 └── revamp/
-    ├── index.html
+    ├── resume.html
     ├── style.css
-    └── profile.jpg
+    └── profile.webp
+
 ```
 
 ## Projects
